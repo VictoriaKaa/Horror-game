@@ -1,56 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { Button, Container } from '@mui/material';
 import './App.css';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { RootState } from './store';
 
 function App() {
+  const navigate = useNavigate();
+  const { maxScore } = useSelector((state: RootState) => state.questions);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      <Container maxWidth="sm" className='app-container'>
+        <div>Правила
+          <div className='rules'>
+            <div>1. Цель: нужно выжить этой ночью</div>
+            <div>2. Каждый вариант ответа может быть верным, неверным или частично верным. Частично верный дает очки</div>
+            <div>3. Если вы ошиблись, вас убьют. Если вы ответили верно, вы продолжаете выживание. Если вы частично ошиблись, вы накапливаете очки выживания</div>
+            <div>4. Максимальное число очков - {maxScore}</div>
+            <div>Удачи!</div>
+          </div>
+        </div>
+        <Button variant="contained" onClick={() => navigate('/main')} color="error" className='start-btn'>Start!</Button>
+      </Container>
     </div>
   );
 }

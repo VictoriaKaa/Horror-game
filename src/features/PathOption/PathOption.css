@@ -1,0 +1,17 @@
+.option {
+    padding: 10px 0px;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.middle {
+    color: yellow;
+}
+
+.correct {
+    color: rgb(58, 168, 50);
+}
+
+.incorrect {
+    color: red;
+}
