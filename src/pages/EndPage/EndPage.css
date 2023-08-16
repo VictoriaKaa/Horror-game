@@ -18,3 +18,12 @@
 .win {
     color: rgb(58, 168, 50);
 }
+
+@media (max-width: 320px) {
+    .end-page-container {
+        padding: 45px 20px;
+    }
+    .end-page {
+        font-size: 70px;
+    }
+}

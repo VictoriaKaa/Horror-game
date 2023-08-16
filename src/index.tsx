@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import { createRoot } from 'react-dom/client';
@@ -16,7 +16,7 @@ import ErrorPage from './features/ErrorPage/ErrorPage';
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
