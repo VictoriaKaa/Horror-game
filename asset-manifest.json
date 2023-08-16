@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Horror-game/static/css/main.79276f6d.css",
+    "main.css": "/Horror-game/static/css/main.baea238f.css",
     "main.js": "/Horror-game/static/js/main.56cdcae4.js",
     "static/js/787.28cb0dcd.chunk.js": "/Horror-game/static/js/787.28cb0dcd.chunk.js",
     "static/media/magic-forest.jpg": "/Horror-game/static/media/magic-forest.b48f3e53ddcafb2772fb.jpg",
     "index.html": "/Horror-game/index.html",
-    "main.79276f6d.css.map": "/Horror-game/static/css/main.79276f6d.css.map",
+    "main.baea238f.css.map": "/Horror-game/static/css/main.baea238f.css.map",
     "main.56cdcae4.js.map": "/Horror-game/static/js/main.56cdcae4.js.map",
     "787.28cb0dcd.chunk.js.map": "/Horror-game/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79276f6d.css",
+    "static/css/main.baea238f.css",
     "static/js/main.56cdcae4.js"
   ]
 }
